@@ -13,6 +13,9 @@
 		22E26A392A0B788D00B21FD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E26A372A0B788D00B21FD8 /* Main.storyboard */; };
 		22E26A3B2A0B788E00B21FD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E26A3A2A0B788E00B21FD8 /* Assets.xcassets */; };
 		22E26A3E2A0B788E00B21FD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E26A3C2A0B788E00B21FD8 /* LaunchScreen.storyboard */; };
+		22E26A492A0B7C3900B21FD8 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E26A482A0B7C3900B21FD8 /* CarModel.swift */; };
+		22E26A4B2A0B7D6200B21FD8 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E26A4A2A0B7D6200B21FD8 /* CarViewModel.swift */; };
+		22E26A4D2A0B7E1600B21FD8 /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E26A4C2A0B7E1600B21FD8 /* CarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		22E26A3A2A0B788E00B21FD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22E26A3D2A0B788E00B21FD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22E26A3F2A0B788E00B21FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E26A482A0B7C3900B21FD8 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		22E26A4A2A0B7D6200B21FD8 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
+		22E26A4C2A0B7E1600B21FD8 /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		22E26A302A0B788D00B21FD8 /* MVVM Car */ = {
 			isa = PBXGroup;
 			children = (
+				22E26A472A0B7B6C00B21FD8 /* ViewModel */,
+				22E26A462A0B7B6500B21FD8 /* View */,
+				22E26A452A0B7B5E00B21FD8 /* Model */,
 				22E26A312A0B788D00B21FD8 /* AppDelegate.swift */,
 				22E26A332A0B788D00B21FD8 /* SceneDelegate.swift */,
-				22E26A352A0B788D00B21FD8 /* ViewController.swift */,
 				22E26A372A0B788D00B21FD8 /* Main.storyboard */,
 				22E26A3A2A0B788E00B21FD8 /* Assets.xcassets */,
 				22E26A3C2A0B788E00B21FD8 /* LaunchScreen.storyboard */,
 				22E26A3F2A0B788E00B21FD8 /* Info.plist */,
 			);
 			path = "MVVM Car";
+			sourceTree = "<group>";
+		};
+		22E26A452A0B7B5E00B21FD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22E26A482A0B7C3900B21FD8 /* CarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22E26A462A0B7B6500B21FD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22E26A352A0B788D00B21FD8 /* ViewController.swift */,
+				22E26A4C2A0B7E1600B21FD8 /* CarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22E26A472A0B7B6C00B21FD8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				22E26A4A2A0B7D6200B21FD8 /* CarViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E26A492A0B7C3900B21FD8 /* CarModel.swift in Sources */,
 				22E26A362A0B788D00B21FD8 /* ViewController.swift in Sources */,
+				22E26A4B2A0B7D6200B21FD8 /* CarViewModel.swift in Sources */,
 				22E26A322A0B788D00B21FD8 /* AppDelegate.swift in Sources */,
 				22E26A342A0B788D00B21FD8 /* SceneDelegate.swift in Sources */,
+				22E26A4D2A0B7E1600B21FD8 /* CarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
